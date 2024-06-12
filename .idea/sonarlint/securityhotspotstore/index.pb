@@ -20,3 +20,9 @@ B
 styles/content.css,7\a\7aba9bc5a2b3968c1d22ecb19422c179ea4af710
 N
 scripts/animated_background.js,3\3\3394623ed32527d5cd13db6657897ca5b6dbb512
+A
+swap_vertical.svg,6\a\6ad32957b09076a23c614e0ddb050cc7e92d835f
+I
+scripts/projects_order.js,b\e\be94edc6c81fc5fd5e9165052b639bdabc462299
+E
+svg/swap_vertical.svg,c\4\c4a23e7a335a96a9179e6195176ce8dbd41fcf54

@@ -14,7 +14,7 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
     line-height: 1.6;
     min-height: 100vh;
-    height: max-content;
+    height: 100%;
     overflow-x: hidden;
 }
 
