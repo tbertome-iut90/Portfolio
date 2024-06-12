@@ -1,0 +1,21 @@
+.animated-bg {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    min-height: 200vh;
+    height:100%;
+    background:
+            linear-gradient(90deg, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0.15) 100%),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0) 10%);
+}
+
+.bg-square {
+    background: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    opacity: 0.8;
+}
