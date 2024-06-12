@@ -8,7 +8,7 @@
 }
 
 .title {
-    width: 75%;
+    width: 66%;
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,11 @@ button.svg-button .svg-icon {
     filter: brightness(0) invert(0);
 }
 
-/* Dark mode */
+.typewriter {
+    opacity: 0;
+}
+
+/* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
     button.svg-button .svg-icon {
