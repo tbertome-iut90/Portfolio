@@ -3,7 +3,7 @@ function updateFavicon() {
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (isDarkMode) {
-        favicon.href = 'favicons/logo-dark.ico';
+        favicon.href = 'favicons/logo_dark.ico';
     } else {
         favicon.href = 'favicons/logo.ico';
     }
