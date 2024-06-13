@@ -27,24 +27,23 @@ function typewriterEffect(element, speed) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const typewriterElements = document.querySelectorAll('.typewriter');
-    const speed = 20;
-
-    let animationPromise = Promise.resolve();
+    const speed = 10;
+    const delay = 500;
 
     function initObserver() {
         const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
                     const element = entry.target;
-                    animationPromise = animationPromise.then(() => {
-                        return typewriterEffect(element, speed);
-                    });
+                    setTimeout(() => {
+                        typewriterEffect(element, speed);
+                    }, index * delay);
                     observer.unobserve(element);
                 }
             });
         }, { threshold: 0.5 });
 
-        typewriterElements.forEach((element) => {
+        typewriterElements.forEach((element, index) => {
             observer.observe(element);
         });
     }

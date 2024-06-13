@@ -16,6 +16,7 @@
 }
 
 .projects {
+    width: 66%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -24,6 +25,10 @@
 
 .projects.reverse {
     flex-direction: column-reverse;
+}
+
+.projects.reverse .year {
+    flex-direction: row-reverse;
 }
 
 h1 {
@@ -39,12 +44,17 @@ h3 {
     font-size: 2vw;
 }
 
+h4 {
+    font-size: 1.5vw;
+}
+
 p {
     font-size: 1vw;
 }
 
 a {
-    font-size: 1vw;
+    color: black;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -73,10 +83,121 @@ button.svg-button .svg-icon {
     opacity: 0;
 }
 
+.year-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 0;
+}
+
+.year-title-container h3 {
+    border: 2px solid black;
+    padding: 0.25vw 5vw;
+    border-radius: 2vw;
+}
+
+.year-title-container h3:hover {
+    background-color: black;
+    color: white;
+    transition: 0.25s;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    border: none;
+}
+
+.line.left {
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(0,0,0,1));
+}
+
+.line.right {
+    background: linear-gradient(90deg, rgba(0,0,0,1), rgba(255,255,255,0));
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+    margin: 1vw 0;
+}
+
+.chip {
+    padding: 0.125vw 0.5vw;
+    border: 1px solid black;
+    border-radius: 2vw;
+}
+
+.chip:hover {
+    background-color: black;
+    color: white;
+    transition: 0.25s;
+}
+
+.overview {
+    width: 100%;
+    display: flex;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.description {
+    width: 50%;
+    text-align: left;
+    padding: 2vw;
+}
+
+.description h4 {
+    margin-bottom: 1vw;
+}
+
+.illustration {
+    width: 50%;
+    padding: 1vw;
+}
+
+.illustration img,.illustration video {
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.illustration img:hover,.illustration video:hover {
+    box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+    transition: 0.25s;
+}
+
 /* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
     button.svg-button .svg-icon {
         filter: brightness(0) invert(1);
+    }
+    .year-title-container h3 {
+        border: 2px solid white;
+    }
+
+    .line.left {
+        background: linear-gradient(90deg, rgba(0,0,0,0), rgba(255,255,255,1));
+    }
+
+    .line.right {
+        background: linear-gradient(90deg, rgba(255,255,255,1), rgba(0,0,0,0));
+    }
+    .chip {
+        border: 1px solid white;
+    }
+    .chip:hover {
+        background-color: white;
+        color: black;
+    }
+    a {
+        color: white;
+    }
+    .illustration img:hover,.illustration video:hover {
+        box-shadow: 0 0 1vw rgba(255,255,255,0.5);
     }
 }
