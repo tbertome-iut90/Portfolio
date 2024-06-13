@@ -1,7 +1,7 @@
 function typewriterEffect(element, speed) {
     return new Promise(resolve => {
         const originalHTML = element.innerHTML;
-        const html = element.outerHTML.replace(' class="typewriter"', '').trim();
+        const html = element.textContent;
         element.innerHTML = '';
         element.style.opacity = '0';
 
@@ -15,7 +15,7 @@ function typewriterEffect(element, speed) {
                 setTimeout(function () {
                     element.innerHTML = originalHTML;
                     resolve();
-                }, 100);
+                }, 0);
             }
         }, speed);
 
