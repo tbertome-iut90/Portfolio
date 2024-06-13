@@ -23,13 +23,28 @@ body {
     color: black;
 }
 
+main {
+    height: max-content;
+}
+
+#logo-iut-info {
+    filter: invert(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vw;
+    width: 15vw;
+    z-index: 99999;
+}
+
+/* ----- DARK MODE ----- */
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
     }
-}
-
-main {
-    height: max-content;
+    #logo-iut-info {
+        filter: invert(0);
+    }
 }

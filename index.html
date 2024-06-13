@@ -20,6 +20,7 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/glowing_cursor.css">
     <link rel="stylesheet" href="styles/animated_background.css">
     <link rel="stylesheet" href="styles/content.css">
@@ -27,6 +28,8 @@
     <title>Tom Bertomeu</title>
 </head>
 <body>
+
+<img src="images/logo_iut_info_blanc.png" alt="Logo IUT Informatique" id="logo-iut-info">
 
 <!-- GLOWING CURSOR -->
 <div id="glowing-cursor">
@@ -41,7 +44,7 @@
     <!-- CONTENT -->
     <div class="content">
         <div class="title">
-            <h1 class="typewriter">Tom Bertomeu</h1>
+            <h1 class="typewriter" style="margin-bottom: 2vw">Tom Bertomeu</h1>
             <p class="typewriter">Salut! Je m'appelle <b>Tom</b>, j'ai <b>20 ans</b> et je suis étudiant en <b>deuxième année de BUT informatique</b> à l'<b>IUT de Nord Franche-Comté</b>.</p>
             <p class="typewriter">J'aime particulièrement travailler sur des projets qui mêlent <b>design</b> et <b>ingénierie</b>, <b>esthétisme</b> et <b>facilité d'utilisation</b>, mais qui ont surtout une <b>bonne conception</b>.</p>
             <p class="typewriter">J'adore <b>découvrir</b> de nouvelles technologies, de nouvelles façons de faire les choses, et les expérimenter dans de petits <b>projets personnels</b>.</p>
@@ -57,102 +60,226 @@
 
         <div class="projects">
             <div class="year">
+
                 <div class="year-title-container typewriter">
                     <hr class="line left">
                     <h3>2023 - 2024</h3>
                     <hr class="line right">
                 </div>
-                <div class="project">
-                    <div class="overview">
-                        <div class="description">
-                            <h4 class="typewriter">Stage chez Vecofroid</h4>
-                            <p class="typewriter">
-                                Un stage de 10 semaines chez Vecofroid, lors duquel j'ai développé une application ayant pour but de numériser les fiches d'intervention et les bons de travail de l'entreprise, alors au format papier.
-                                <br>
-                                Étant le seul développeur sur ce projet, j'ai conçu l'application de A à Z.
-                            </p>
-                            <div class="chips typewriter">
-                                <div class="chip"><p>Node</p></div>
-                                <div class="chip"><p>PostgreSQL</p></div>
-                                <div class="chip"><p>Vue</p></div>
-                                <div class="chip"><p>Ionic</p></div>
+
+                <div class="year-projects">
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter">Stage chez Vecofroid</h4>
+                                <p class="typewriter">
+                                    Un stage de 10 semaines chez Vecofroid, lors duquel j'ai développé une application ayant pour but de <b>numériser les fiches d'intervention et les bons de travail de l'entreprise</b>, alors au format papier.
+                                    <br>
+                                    Étant le <b>seul développeur sur ce projet</b>, j'ai conçu l'application de A à Z.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Node</p></div>
+                                    <div class="chip"><p>PostgreSQL</p></div>
+                                    <div class="chip"><p>Vue</p></div>
+                                    <div class="chip"><p>Ionic</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <img src="images/no-image.png" alt="Illustration">
                             </div>
                         </div>
-                        <div class="illustration">
-                            <img src="images/no-image.png" alt="Illustration">
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://github.com/tbertome-iut90/Mastermind" target="_blank">Mastermind</a></h4>
+                                <p class="typewriter">
+                                    Une reproduction du jeu <b>Mastermind</b>, dont le but est de trouver une combinaison secrète de couleurs en un maximum de 12 tentatives.
+                                    Un clavier permet au joueur de proposer une combinaison, et un retour lui indique le nombre de couleurs bien placées et mal placées.
+                                    <br>
+                                    Ce mini-projet avait pour objectif principal de <b>me familiariser avec Qt et C++</b>.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>C++</p></div>
+                                    <div class="chip"><p>Qt</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <img src="images/no-image.png" alt="Illustration">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter">ARvolution</h4>
+                                <p class="typewriter">
+                                    Un salon fictif sur la réalité virtuelle et augmentée, dont nous avons réalisé le site web.
+                                    <br>
+                                    Ce projet <b>présente le salon et ses acteurs</b>, et permet à ceux-ci de s'inscrire et de gérer leur stand, leurs conférences, leurs produits.
+                                    Il permet également aux visiteurs de réserver des places pour les conférences.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Vue</p></div>
+                                    <div class="chip"><p>Node</p></div>
+                                    <div class="chip"><p>PostgreSQL</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <video src="videos/ARvolution.mkv" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter">Gestion d'une organisation</h4>
+                                <p class="typewriter">
+                                    Un mini-projet de gestion d'une organisation, dans lequel on peut gérer ses membres et ses équipes.
+                                    <br>
+                                    Ce projet nous a permis de nous familiariser avec <b>Vue.js</b> et utilise <b>Vuetify</b> pour concentrer notre travail sur la logique appliquée sur les données récupérées depuis une API.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Vue</p></div>
+                                    <div class="chip"><p>Node</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <video src="videos/Organisations.mkv" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://github.com/tbertome-iut90/2D-Matrix" target="_blank">Manipulation de matrices 2D</a></h4>
+                                <p class="typewriter">
+                                    Un cours qui consistait initialement à <b>manipuler des matrices 2D pour modéliser des objets en 3D</b>.
+                                    <br>
+                                    J'ai décidé de le pousser plus loin tentant de <b>créer un rendu 3D de n'importe quelle fonction mathématique</b> donnée en entrée.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Python</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <video src="videos/Matrices_2D.mkv" autoplay loop muted></video>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="overview reverse">
-                        <div class="description">
-                            <h4 class="typewriter"><a href="https://github.com/tbertome-iut90/Mastermind" target="_blank">Mastermind</a></h4>
-                            <p class="typewriter">
-                                Une reproduction du jeu Mastermind, dont le but est de trouver une combinaison secrète de couleurs en un maximum de 12 tentatives.
-                                Un clavier permet au joueur de proposer une combinaison, et un retour lui indique le nombre de couleurs bien placées et mal placées.
-                                <br>
-                                Ce mini-projet avait pour objectif principal de <b>me familiariser avec Qt et C++</b>.
-                            </p>
-                            <div class="chips typewriter">
-                                <div class="chip"><p>C++</p></div>
-                                <div class="chip"><p>Qt</p></div>
-                            </div>
-                        </div>
-                        <div class="illustration">
-                            <img src="images/no-image.png" alt="Illustration">
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="overview">
-                        <div class="description">
-                            <h4 class="typewriter"><a href="https://github.com/tbertome-iut90/2D-Matrix" target="_blank">Manipulation de matrices 2D</a></h4>
-                            <p class="typewriter">
-                                Un cours qui consistait initialement à <b>manipuler des matrices 2D pour modéliser des objets en 3D</b>.
-                                <br>
-                                J'ai décidé de le pousser plus loin tentant de créer un rendu 3D de n'importe quelle fonction mathématique donnée en entrée.
-                            </p>
-                            <div class="chips typewriter">
-                                <div class="chip"><p>Python</p></div>
-                            </div>
-                        </div>
-                        <div class="illustration">
-                            <video src="videos/Matrices_2D.mkv" autoplay loop muted></video>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
             <div class="year">
                 <div class="year-title-container typewriter">
                     <hr class="line left">
                     <h3>2022 - 2023</h3>
                     <hr class="line right">
                 </div>
-                <div class="project">
-                    <div class="overview">
-                        <div class="description">
-                            <h4 class="typewriter"><a href="https://projectsae.github.io/sae-1-05-06/" target="_blank">Présentation de Fortiche</a></h4>
-                            <p class="typewriter">
-                                Site ayant pour but de <b>présenter Fortiche</b>, entreprise réputée dans le monde de l'animation.
-                                <br>
-                                Il détaille son <b>histoire</b>, les <b>projets</b> sur lesquels elle a travaillé,
-                                son <b>organisation</b>, et une analyse globale de l'<b>économie</b> de l'entreprise.
-                            </p>
-                            <div class="chips typewriter">
-                                <div class="chip"><p>HTML</p></div>
-                                <div class="chip"><p>CSS</p></div>
-                                <div class="chip"><p>JavaScript</p></div>
+
+                <div class="year-projects">
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Brandub</a></h4>
+                                <p class="typewriter">
+                                    Un jeu de plateau irlandais, dans lequel un joueur doit exfiltrer son roi (branan) contre un autre joueur qui doit l'encercler pour le capturer.
+                                    <br>
+                                    Ce projet utilise un <b>framework imposé par les enseignants</b>, et a pour but de nous familiariser avec la <b>programmation orientée objet</b>.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Java</p></div>
+                                    <div class="chip"><p>JavaFX</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <img src="images/Brandub.png" alt="Illustration">
                             </div>
                         </div>
-                        <div class="illustration">
-                            <video src="videos/Fortiche.mkv" autoplay loop muted></video>
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Boutique de lunettes</a></h4>
+                                <p class="typewriter">
+                                    <b>Boutique de e-commerce</b> permettant aux utilisateurs de consulter les produits, de les ajouter à leur panier et de les acheter,
+                                    et aux administrateurs de gérer les produits, les commandes, et de visualiser des statistiques liées à ceux-ci.
+                                    <br>
+                                    Ce projet a, par la suite, été installé sur une machine virtuelle que nous avons configurée.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Python</p></div>
+                                    <div class="chip"><p>MySQL</p></div>
+                                    <div class="chip"><p>Flask</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <img src="images/BoutiqueLunettes.png" alt="Illustration">
+                            </div>
                         </div>
                     </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://github.com/tbertome-iut90/Stuckwin" target="_blank">Stuckwin</a></h4>
+                                <p class="typewriter">
+                                    Un jeu de plateau en 1 contre 1, dans lequel le premier joueur à ne plus pouvoir bouger a perdu.
+                                    <br>
+                                    Ce projet utilise un <b>framework</b> et une <b>structure imposés par les enseignants</b>,
+                                    et a pour but de nous familiariser avec la <b>programmation Java</b>,
+                                    et de concevoir un automatisme adapté au jeu.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>Java</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <img src="images/StuckWin.png" alt="Illustration">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="overview">
+                            <div class="description">
+                                <h4 class="typewriter"><a href="https://projectsae.github.io/sae-1-05-06/" target="_blank">Présentation de Fortiche</a></h4>
+                                <p class="typewriter">
+                                    Site ayant pour but de <b>présenter Fortiche</b>, entreprise réputée dans le monde de l'animation.
+                                    <br>
+                                    Il détaille son <b>histoire</b>, les <b>projets</b> sur lesquels elle a travaillé,
+                                    son <b>organisation</b>, et une analyse globale de l'<b>économie</b> de l'entreprise.
+                                </p>
+                                <div class="chips typewriter">
+                                    <div class="chip"><p>HTML</p></div>
+                                    <div class="chip"><p>CSS</p></div>
+                                    <div class="chip"><p>JavaScript</p></div>
+                                </div>
+                            </div>
+                            <div class="illustration">
+                                <video src="videos/Fortiche.mkv" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
 </main>
+
+<footer>
+    <p><a href="https://github.com/tbertome-iut90" target="_blank">Tom Bertomeu - 2024</a></p>
+</footer>
 
 </body>
 </html>
